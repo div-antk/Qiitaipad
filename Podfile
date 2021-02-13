@@ -8,4 +8,5 @@ target 'Qiitaipad' do
   # Pods for Qiitaipad
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Alamofire'
 end
