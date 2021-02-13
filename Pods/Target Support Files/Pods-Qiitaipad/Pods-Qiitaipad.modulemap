@@ -1,0 +1,6 @@
+framework module Pods_Qiitaipad {
+  umbrella header "Pods-Qiitaipad-umbrella.h"
+
+  export *
+  module * { export * }
+}

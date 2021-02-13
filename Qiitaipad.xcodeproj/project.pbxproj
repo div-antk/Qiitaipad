@@ -13,9 +13,11 @@
 		3B24821C25D7ECD1009155CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B24821A25D7ECD1009155CA /* Main.storyboard */; };
 		3B24821E25D7ECD4009155CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B24821D25D7ECD4009155CA /* Assets.xcassets */; };
 		3B24822125D7ECD4009155CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B24821F25D7ECD4009155CA /* LaunchScreen.storyboard */; };
+		53EA12BE404142F3DB80CF3E /* Pods_Qiitaipad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5FC4338BD005D3FD0B4E16 /* Pods_Qiitaipad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34EF6B54D0398C7EA1BF105A /* Pods-Qiitaipad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiitaipad.debug.xcconfig"; path = "Target Support Files/Pods-Qiitaipad/Pods-Qiitaipad.debug.xcconfig"; sourceTree = "<group>"; };
 		3B24821125D7ECD1009155CA /* Qiitaipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiitaipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B24821425D7ECD1009155CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B24821625D7ECD1009155CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3B24821D25D7ECD4009155CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B24822025D7ECD4009155CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B24822225D7ECD4009155CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE69A8AFDE0619E044F61483 /* Pods-Qiitaipad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiitaipad.release.xcconfig"; path = "Target Support Files/Pods-Qiitaipad/Pods-Qiitaipad.release.xcconfig"; sourceTree = "<group>"; };
+		EC5FC4338BD005D3FD0B4E16 /* Pods_Qiitaipad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qiitaipad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EA12BE404142F3DB80CF3E /* Pods_Qiitaipad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				3B24821325D7ECD1009155CA /* Qiitaipad */,
 				3B24821225D7ECD1009155CA /* Products */,
+				BEE4FED5B2A48D7656ACA23C /* Pods */,
+				ADF92DBF8284A21FF6776560 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Qiitaipad;
 			sourceTree = "<group>";
 		};
+		ADF92DBF8284A21FF6776560 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5FC4338BD005D3FD0B4E16 /* Pods_Qiitaipad.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE4FED5B2A48D7656ACA23C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34EF6B54D0398C7EA1BF105A /* Pods-Qiitaipad.debug.xcconfig */,
+				CE69A8AFDE0619E044F61483 /* Pods-Qiitaipad.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B24822525D7ECD4009155CA /* Build configuration list for PBXNativeTarget "Qiitaipad" */;
 			buildPhases = (
+				2C8B8CD45FF3379E95A200A4 /* [CP] Check Pods Manifest.lock */,
 				3B24820D25D7ECD1009155CA /* Sources */,
 				3B24820E25D7ECD1009155CA /* Frameworks */,
 				3B24820F25D7ECD1009155CA /* Resources */,
+				5FE9E7357E46EC4EA80CEAB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C8B8CD45FF3379E95A200A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Qiitaipad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FE9E7357E46EC4EA80CEAB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qiitaipad/Pods-Qiitaipad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Qiitaipad/Pods-Qiitaipad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Qiitaipad/Pods-Qiitaipad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B24820D25D7ECD1009155CA /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		3B24822625D7ECD4009155CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34EF6B54D0398C7EA1BF105A /* Pods-Qiitaipad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		3B24822725D7ECD4009155CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE69A8AFDE0619E044F61483 /* Pods-Qiitaipad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
