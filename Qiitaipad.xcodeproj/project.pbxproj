@@ -13,6 +13,7 @@
 		3B24821C25D7ECD1009155CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B24821A25D7ECD1009155CA /* Main.storyboard */; };
 		3B24821E25D7ECD4009155CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B24821D25D7ECD4009155CA /* Assets.xcassets */; };
 		3B24822125D7ECD4009155CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B24821F25D7ECD4009155CA /* LaunchScreen.storyboard */; };
+		3B5DE29E25D9412D00817127 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5DE29D25D9412D00817127 /* ArticleModel.swift */; };
 		53EA12BE404142F3DB80CF3E /* Pods_Qiitaipad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5FC4338BD005D3FD0B4E16 /* Pods_Qiitaipad.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		3B24821D25D7ECD4009155CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B24822025D7ECD4009155CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B24822225D7ECD4009155CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5DE29D25D9412D00817127 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		CE69A8AFDE0619E044F61483 /* Pods-Qiitaipad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qiitaipad.release.xcconfig"; path = "Target Support Files/Pods-Qiitaipad/Pods-Qiitaipad.release.xcconfig"; sourceTree = "<group>"; };
 		EC5FC4338BD005D3FD0B4E16 /* Pods_Qiitaipad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qiitaipad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 			children = (
 				3B24821425D7ECD1009155CA /* AppDelegate.swift */,
 				3B24821625D7ECD1009155CA /* SceneDelegate.swift */,
+				3B5DE29C25D9412100817127 /* Model */,
 				3B24821825D7ECD1009155CA /* ViewController.swift */,
 				3B24821A25D7ECD1009155CA /* Main.storyboard */,
 				3B24821D25D7ECD4009155CA /* Assets.xcassets */,
@@ -72,6 +75,14 @@
 				3B24822225D7ECD4009155CA /* Info.plist */,
 			);
 			path = Qiitaipad;
+			sourceTree = "<group>";
+		};
+		3B5DE29C25D9412100817127 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B5DE29D25D9412D00817127 /* ArticleModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		ADF92DBF8284A21FF6776560 /* Frameworks */ = {
@@ -207,6 +218,7 @@
 			files = (
 				3B24821925D7ECD1009155CA /* ViewController.swift in Sources */,
 				3B24821525D7ECD1009155CA /* AppDelegate.swift in Sources */,
+				3B5DE29E25D9412D00817127 /* ArticleModel.swift in Sources */,
 				3B24821725D7ECD1009155CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
