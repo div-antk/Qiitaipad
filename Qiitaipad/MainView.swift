@@ -9,30 +9,40 @@ import SwiftUI
 
 struct MainView: View {
     
+    @ObservedObject var vm:ArticleViewModel = ArticleViewModel()
+    
     @State var articles: [String] = ["🤔", "😨", "😉", "🤔", "😨", "😉"]
     @State var SearchText = ""
     
     var body: some View {
         
-        VStack {
-            ZStack(alignment: .trailing) {
-            Color.green
-                .frame(height: 80)
-            TextField("検索", text: $SearchText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .frame(width: 400)
-            }
-            List {
-                ForEach(articles, id: \.self) {
-                    article in
+        VStack(spacing: 0) {
+            ZStack {
+                Color.green
+                    .edgesIgnoringSafeArea(.all)
+                VStack(spacing: 0) {
+                    
                     HStack {
-                        Text(article)
-                            .padding(.all)
-                        Spacer()
+                        Spacer().frame(width:200)
+                        TextField("検索", text: $vm.searchText)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(width: 400, height:120)
+                    }
+                    VStack {
+                        List {
+                            ForEach(articles, id: \.self) {
+                                article in
+                                HStack {
+                                    Text(article)
+                                        .padding(.all)
+                                    Spacer()
+                                }
+                            }
+                            .frame(height: 80)
+                            .listRowBackground(Color.white)
+                        }
                     }
                 }
-                .frame(height: 80)
-                .listRowBackground(Color.white)
             }
         }
     }
