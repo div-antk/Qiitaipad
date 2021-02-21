@@ -12,7 +12,7 @@ struct MainView: View {
     @ObservedObject var vm:ArticleViewModel = ArticleViewModel()
     
     @State var articles: [String] = ["🤔", "😨", "😉", "🤔", "😨", "😉"]
-    @State var SearchText = ""
+    @State var keyword = ""
     
     var body: some View {
         
@@ -24,7 +24,7 @@ struct MainView: View {
                     
                     HStack {
                         Spacer().frame(width:200)
-                        TextField("検索", text: $vm.searchText)
+                        TextField("検索", text: $vm.keyword)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                             .frame(width: 400, height:120)
                     }

@@ -12,5 +12,13 @@ import Alamofire
 class ArticleViewModel: ObservableObject {
     
     // Input
-    @Published var searchText: String = ""
+    @Published var keyword: String = ""
+    
+    
+    func encode(keyword: String) -> Any {
+        
+        let encoded = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        return encoded!
+    }
 }

@@ -8,15 +8,20 @@
 import Foundation
 import Alamofire
 
-final class GetArticlesModel {
+final class GetArticlesModel: ObservableObject {
     
-    var articles = [ArticleModel]()
+    @Published var articles: [ArticleModel]
+    @Published var keyword: String = ""
+
+    init() {
+        getArticles(keyword)
+    }
     
-    func getArticles(keyword: String)  {
+    func getArticles(keyword: String) {
         
         let keywordEncode = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
-        let url = "https://qiita.com/api/v2/items?query=\(keywordEncode!)+tag:Swift"
+        let url = URL(string: "https://qiita.com/api/v2/items?query=\(keywordEncode!)+tag:Swift")!
         
         AF.request(url,
                    method: .get,
@@ -30,7 +35,7 @@ final class GetArticlesModel {
                     let articles: [ArticleModel] = try
                         decoder.decode([ArticleModel].self, from: response.data!)
                     self.articles = articles
-//                    self.
+                    //                    self.
                     
                 } catch {
                     print("error")
@@ -38,3 +43,4 @@ final class GetArticlesModel {
             }
     }
 }
+

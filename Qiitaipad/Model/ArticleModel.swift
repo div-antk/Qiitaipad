@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Alamofire
+import Combine
 
 struct ArticleModel: Codable {
     let title: String
